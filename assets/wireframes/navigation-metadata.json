@@ -1,0 +1,72 @@
+{
+  "createdAt": "2026-10-20",
+  "fileKey": "QYrBUue2AdyrjvJLiMu7F2",
+  "pageId": "19:4",
+  "sectionId": "23:452",
+  "reviewFrameId": "83:99",
+  "originalReviewFrameId": "75:2",
+  "status": "Visual navigation experiment awaiting user review",
+  "tabs": [
+    {
+      "label": "Planejamento",
+      "scope": "Month and projection"
+    },
+    {
+      "label": "Lançamentos",
+      "scope": "Income and expenses"
+    },
+    {
+      "label": "Contas",
+      "scope": "Accounts, wallets, and cards"
+    },
+    {
+      "label": "Ajustes",
+      "scope": "Settings"
+    }
+  ],
+  "primaryActionSeparate": true,
+  "components": {
+    "NavigationTab": "82:138",
+    "BottomNavigation/Wireframe": "82:139"
+  },
+  "frames": [
+    {
+      "id": "83:105",
+      "export": "monthly-planning-navigation-current.png",
+      "pixels": [
+        786,
+        1704
+      ],
+      "sha256": "95dd850f6bb137d9bc2ff11ef9562e297f5aa817cf87a3395a5083acc0c3e94e"
+    },
+    {
+      "id": "83:142",
+      "export": "monthly-planning-navigation-first-use.png",
+      "pixels": [
+        786,
+        1704
+      ],
+      "sha256": "f638246e283ce18cd0d6d940dc9744a1642b4b756d2ed47cae016c1ab1739b8a"
+    },
+    {
+      "id": "83:99",
+      "export": "monthly-planning-navigation-review.png",
+      "pixels": [
+        2880,
+        2104
+      ],
+      "sha256": "47ad7da1a09835b827c5e90127c84f3d040dae0514a48ee5c01408944664f6a9"
+    }
+  ],
+  "validation": {
+    "screenshotsReviewed": true,
+    "originalExportsUnchanged": true,
+    "contentViewportHeight": 638,
+    "originalContentViewportHeight": 706,
+    "overflowIssueCount": 0,
+    "hardwareTested": false,
+    "dynamicTypeTested": false,
+    "prototypeConnected": false
+  },
+  "references": "../references/navigation-banks/README.md"
+}

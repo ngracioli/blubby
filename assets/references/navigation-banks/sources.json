@@ -1,0 +1,150 @@
+{
+  "retrieved_at": "2026-10-20",
+  "purpose": "Navigation references, not incorporated as app assets.",
+  "banks": [
+    {
+      "bank": "nubank",
+      "source_page": "https://apps.apple.com/br/app/nubank-conta-cart%C3%A3o-e-mais/id814456780",
+      "images": [
+        {
+          "file": "nubank-01.webp",
+          "image_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/65/48/22/65482253-2686-eff7-2b39-805ab9faebe2/PT-01.png/600x1300bb.webp",
+          "width": 600,
+          "height": 1298,
+          "sha256": "114f2276264605f841492ef327d6947083a99bb5187a5c3ca6b3180c169334f0"
+        },
+        {
+          "file": "nubank-02.webp",
+          "image_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/aa/50/b2/aa50b2d2-72cb-a2b8-e9a2-4de60fcc25c3/PT-02.png/600x1300bb.webp",
+          "width": 600,
+          "height": 1298,
+          "sha256": "e87fe660adad230644d1a2e9d52fb92ecc4f0afaee0acb67f8a29d439f9ea9f8"
+        },
+        {
+          "file": "nubank-03.webp",
+          "image_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/9a/37/36/9a3736d3-29b9-8264-e337-eefb8a11929e/PT-03.png/600x1300bb.webp",
+          "width": 600,
+          "height": 1298,
+          "sha256": "b37ad353bb63d12990092c01292539487eff8dc5d16e5c22f32cc5e80291f970"
+        },
+        {
+          "file": "nubank-04.webp",
+          "image_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/a1/e9/bd/a1e9bd57-bf6a-7b90-47ba-36a75c2b406a/PT-04.png/600x1300bb.webp",
+          "width": 600,
+          "height": 1298,
+          "sha256": "834557d5573ec7d2e8f914450551ad4c531730701b348345c05a60adac130733"
+        },
+        {
+          "file": "nubank-05.webp",
+          "image_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/fa/d7/cd/fad7cd17-224b-670a-96a2-6264f9247763/PT-05.png/600x1300bb.webp",
+          "width": 600,
+          "height": 1298,
+          "sha256": "0dd27226d68aaac5bedf51fbf45397ae86387728c61757d9de06574400801fb7"
+        },
+        {
+          "file": "nubank-06.webp",
+          "image_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/69/84/14/6984148d-9778-1ad7-0972-1f941eef1b0a/PT-06.png/600x1300bb.webp",
+          "width": 600,
+          "height": 1298,
+          "sha256": "0ebcb11eb3d4069bd254c27d5391d086505d3192df79ab94e853a524e04c417c"
+        }
+      ]
+    },
+    {
+      "bank": "pagbank",
+      "source_page": "https://apps.apple.com/br/app/banco-pagbank/id1186059012",
+      "images": [
+        {
+          "file": "pagbank-01.webp",
+          "image_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/4e/50/9f/4e509f59-dbcc-4fba-d2cc-58422b41ae40/05_15_26_pagbank_iOS65_01.png/600x1300bb.webp",
+          "width": 600,
+          "height": 1299,
+          "sha256": "af64f4f709716957f04ce1badf259f2bef9a2ef9ce902c5604f7d78158968f8c"
+        },
+        {
+          "file": "pagbank-02.webp",
+          "image_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/b7/53/1a/b7531a07-bcc3-89a3-03e0-4e563c1b3fc6/05_15_26_pagbank_iOS65_03.png/600x1300bb.webp",
+          "width": 600,
+          "height": 1299,
+          "sha256": "70eea91e38f5360d21e8458bc883bf1e7796bcbab14ab9f32fe4127a90135b0b"
+        },
+        {
+          "file": "pagbank-03.webp",
+          "image_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/e4/bb/0b/e4bb0bfb-60b1-6c32-6861-7a48dd3d6004/05_15_26_pagbank_iOS65_04.png/600x1300bb.webp",
+          "width": 600,
+          "height": 1299,
+          "sha256": "d54e79a55f2f79d8b3742b6e43b5db451a45aa98773b6bf325b25b75769ab6a3"
+        },
+        {
+          "file": "pagbank-04.webp",
+          "image_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/5a/b4/62/5ab462d8-4e01-52c5-7fbc-bedd948cbfab/05_15_26_pagbank_iOS65_05.png/600x1300bb.webp",
+          "width": 600,
+          "height": 1299,
+          "sha256": "819365fb01cddaaaff80fde611f07989236d74f703397d9112c3a3b5162501e5"
+        },
+        {
+          "file": "pagbank-05.webp",
+          "image_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/46/e7/25/46e725b6-a508-ed3d-71af-506a3873ca92/05_15_26_pagbank_iOS65_06.png/600x1300bb.webp",
+          "width": 600,
+          "height": 1299,
+          "sha256": "b1fe776b1c53117ce983441f11bdddd6a99b7dac64fa77ba4e27816e5fcad787"
+        },
+        {
+          "file": "pagbank-06.webp",
+          "image_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/3a/64/e0/3a64e0b5-7eca-1334-24aa-27f395588851/05_15_26_pagbank_iOS65_07.png/600x1300bb.webp",
+          "width": 600,
+          "height": 1299,
+          "sha256": "134eb55aaf81f5ba8287e66bb951b6abb019ddfc793036eb05f88607a2b76b3d"
+        }
+      ]
+    },
+    {
+      "bank": "inter",
+      "source_page": "https://apps.apple.com/br/app/id839711154",
+      "images": [
+        {
+          "file": "inter-01.webp",
+          "image_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5c/d4/28/5cd428a3-c454-513e-5800-80837dfb0e86/202607_ASOPF_iPhone6_5_01.png/600x1300bb.webp",
+          "width": 600,
+          "height": 1298,
+          "sha256": "e5fc6275705855d462f1fbaad81cc9ca1dbb5864f1b5129ec09243d94e391834"
+        },
+        {
+          "file": "inter-02.webp",
+          "image_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/30/2c/49/302c49ef-d048-e746-c4a9-a553623ee13a/202607_ASOPF_iPhone6_5_02.png/600x1300bb.webp",
+          "width": 600,
+          "height": 1298,
+          "sha256": "ac268308afd07cf548e2c6feb624af0d32faef3e3ec1fcfd0b6baa19716c359c"
+        },
+        {
+          "file": "inter-03.webp",
+          "image_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/0a/e8/74/0ae8741b-0750-97c5-81a7-4753c5a4cb4f/202607_ASOPF_iPhone6_5_03.png/600x1300bb.webp",
+          "width": 600,
+          "height": 1298,
+          "sha256": "92c2cbec7d36848d81dd7e8f00bc98ca5e29733bc4a57be1d91363f153b8a385"
+        },
+        {
+          "file": "inter-04.webp",
+          "image_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/36/93/91/3693917c-07cf-3102-dba3-8e39fa0e9085/202607_ASOPF_iPhone6_5_04.png/600x1300bb.webp",
+          "width": 600,
+          "height": 1298,
+          "sha256": "8c6a4bd526d0f0fe95527af952000ab997e927bff2dfd989b6f99f197706e0a6"
+        },
+        {
+          "file": "inter-05.webp",
+          "image_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/57/0a/2d/570a2dbc-775d-f3ef-1f0f-0fbef886ea07/202607_ASOPF_iPhone6_5_05.png/600x1300bb.webp",
+          "width": 600,
+          "height": 1298,
+          "sha256": "d34fd76195323109f95e78c5ed304c2e46f856f861aae9742b9741cd5fad0321"
+        },
+        {
+          "file": "inter-06.webp",
+          "image_url": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/44/21/58/44215864-896b-d70b-6358-02b832d79fd1/202607_ASOPF_iPhone6_5_06.png/600x1300bb.webp",
+          "width": 600,
+          "height": 1298,
+          "sha256": "b5baae1c3392e4f5d78ca9e0a7603c84d9ba7db676c90d39cb16457d90719786"
+        }
+      ]
+    }
+  ]
+}

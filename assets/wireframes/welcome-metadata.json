@@ -1,0 +1,64 @@
+{
+  "createdAt": "2026-10-20",
+  "fileKey": "QYrBUue2AdyrjvJLiMu7F2",
+  "pageId": "19:4",
+  "sectionId": "23:450",
+  "boardId": "88:334",
+  "screens": [
+    {
+      "platform": "iOS",
+      "id": "88:340",
+      "width": 393,
+      "height": 852,
+      "heroHeight": 244,
+      "actionsHeight": 280,
+      "contentHeight": 774,
+      "spacerHeight": 178,
+      "providerCount": 2
+    },
+    {
+      "platform": "Android",
+      "id": "88:374",
+      "width": 393,
+      "height": 852,
+      "heroHeight": 244,
+      "actionsHeight": 216,
+      "contentHeight": 774,
+      "spacerHeight": 242,
+      "providerCount": 1
+    }
+  ],
+  "components": {
+    "createdNodeIds": [
+      "87:140",
+      "87:141",
+      "87:142",
+      "87:143",
+      "87:144",
+      "87:145",
+      "87:146",
+      "87:147",
+      "87:148"
+    ],
+    "sectionId": "87:140",
+    "logoId": "87:141",
+    "googleId": "87:143",
+    "appleId": "87:146",
+    "googleLabelProperty": "Label#87:0"
+  },
+  "validation": {
+    "overflowIssueCount": 0,
+    "screenshotsReviewed": true,
+    "productFont": "Manrope",
+    "providerFontException": "Google Sans Flex Medium — validate Google Sans during implementation",
+    "imageAssetsOnly": [
+      "Blubby horizontal signature",
+      "Official Google G",
+      "Official Apple button — pt_BR"
+    ],
+    "prototypeConnected": false,
+    "hardwareTested": false,
+    "dynamicTypeTested": false
+  },
+  "status": "Approved structure; visual proposal awaiting review"
+}

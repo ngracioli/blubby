@@ -1,0 +1,16 @@
+[
+  {
+    "file": "google-g.png",
+    "source": "https://developers.google.com/static/identity/images/g-logo.png",
+    "guidelines": "https://developers.google.com/identity/branding-guidelines",
+    "downloadedAt": "2026-10-20",
+    "sha256": "d1ce9c2af0b10a7333abc99bc706f9a6a199e5b65bf3e3009624f076b8638e6a"
+  },
+  {
+    "file": "apple-continue-white.png",
+    "source": "https://appleid.cdn-apple.com/appleid/button?type=continue&color=white&border=true&border_radius=12&width=345&height=52&locale=pt_BR&scale=2",
+    "guidelines": "https://developer.apple.com/design/human-interface-guidelines/sign-in-with-apple",
+    "downloadedAt": "2026-10-20",
+    "sha256": "8bedf08016c93de5d595d4ebbcff35e32bfc870b5af3854e5271ef9b65779680"
+  }
+]
