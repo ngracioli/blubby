@@ -1,0 +1,65 @@
+{
+  "retrieved_at": "2026-10-20",
+  "icons": [
+    {
+      "name": "chevron-right",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/chevron-right.svg",
+      "sha256": "2758143d7b2434e4aa7307dfd34405c87909ff4052f21b5f3f40d45224b4f19b"
+    },
+    {
+      "name": "chevron-down",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/chevron-down.svg",
+      "sha256": "66ea878e72ed3488bb3b464c39dfdccee8d1f78e560dccea40e5e12da0e87e87"
+    },
+    {
+      "name": "eye",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/eye.svg",
+      "sha256": "5bf90197dd7629cad64a2e48d1186a71559deb6121207d10e3dc5b19ebaffdcf"
+    },
+    {
+      "name": "credit-card",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/credit-card.svg",
+      "sha256": "72d2b1acd904e01c6f676b4f6d07d56550a80b5d42687d43a313b85040943a2e"
+    },
+    {
+      "name": "arrow-down-left",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/arrow-down-left.svg",
+      "sha256": "a0e72a3f47e9a8803ddfce675e3caf9119ef041b38c103065ec707af15d90202"
+    },
+    {
+      "name": "arrow-up-right",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/arrow-up-right.svg",
+      "sha256": "50b2503b9d11881142255466b7e3461d022b919735841c321d72003ac9959fe1"
+    },
+    {
+      "name": "utensils",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/utensils.svg",
+      "sha256": "9b5eb803bc342b8503b6a154ff63a0f754ba52a13fa24c2e270d2ab89c70f76a"
+    },
+    {
+      "name": "shopping-cart",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/shopping-cart.svg",
+      "sha256": "7cdc07053044af9e5fd24fff5e089ce97b2a39ea978933a160c4bbfebf8a167c"
+    },
+    {
+      "name": "wallet",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/wallet.svg",
+      "sha256": "76c9596f629a2abf9cfabb573452f3113ed7e9502c699aa811e630f156eb7556"
+    },
+    {
+      "name": "calendar-days",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/calendar-days.svg",
+      "sha256": "9330eb8d7c4989e97b6361314abbf02953243c602874725c9e58ceca00da3bd7"
+    },
+    {
+      "name": "list",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/list.svg",
+      "sha256": "ff97a7379eb962ddc3863bb59f0f45875ac8da91aac8a38a67361e7118d2d627"
+    },
+    {
+      "name": "settings",
+      "source": "https://raw.githubusercontent.com/lucide-icons/lucide/main/icons/settings.svg",
+      "sha256": "0ae27fd0f81999229e3127ac96c5b32edfea448e291d509e76212b917551d66b"
+    }
+  ]
+}
