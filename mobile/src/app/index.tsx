@@ -1,7 +1,7 @@
 import { Image, StyleSheet, Text, View } from 'react-native';
-import { theme } from '../shared/theme';
-import { images } from '../assets';
-import { ScreenContainer } from '../shared/components';
+import { theme } from '@/shared/theme';
+import { images } from '@/assets';
+import { ScreenContainer } from '@/shared/components';
 
 export default function Index() {
   return (

@@ -2,19 +2,46 @@
 
 ## Status
 
-Documentation conventions are established here. The application structure below is a proposed baseline, not an implementation or a finalized technology decision.
+Implemented baseline with Expo SDK 58, Expo Router, and TypeScript. The application follows a Feature-Based Architecture, separating thin navigation routes from encapsulated business features and shared design primitives.
 
-## Proposed responsibilities
+## Directory structure rules
 
-- Routes define navigation and compose screens. With Expo Router, keep non-route modules outside `src/app`.
-- Feature modules own their screens, feature-specific components, interactions, and API operations.
-- Shared UI owns reusable visual behavior without financial rules or network requests.
-- Data integration owns transport, serialization, and translation of server errors.
-- The backend remains authoritative for authorization and financial mutations. Client validation provides feedback but cannot replace server validation.
+Every new file and directory must adhere to this structural hierarchy:
 
-Keep feature code together. Extract shared modules only when there are actual consumers. Avoid generic base screens and a global folder of unrelated helpers.
+```text
+mobile/src/
+├── app/                  # Routing layer (Expo Router) ONLY
+├── features/             # Business domain modules
+├── shared/               # Cross-cutting UI primitives & tokens
+└── assets/               # Brand images and typed asset exports
+```
 
-Follow [naming conventions](naming.md) and the [pattern selection guide](design-patterns.md). A pattern belongs inside its owning feature unless a real shared responsibility justifies another location.
+### 1. `src/app/` — Routing layer
+- Houses exclusively navigation routes, route groups, and layout files (`_layout.tsx`, `index.tsx`, `(auth)/`, `(tabs)/`).
+- Must remain a thin composition layer. Never write domain logic, heavy JSX, forms, or network requests directly inside `src/app/`.
+- Routes import screens and containers from `src/features/<feature>/` or `src/shared/`.
+
+### 2. `src/features/<feature-name>/` — Domain modules
+- Group code by business capability (`auth`, `planning`, `entries`, `accounts`).
+- A feature owns its domain logic, screen views, feature-specific components, and API integration:
+  - `components/`: Feature-specific UI components (e.g. `login-form.tsx`, `summary-row.tsx`).
+  - `hooks/`: Feature-specific React hooks (e.g. `use-monthly-planning.ts`).
+  - `services/`: Feature API endpoints and client transport (e.g. `planning-api.ts`).
+  - `types.ts`: Domain models and payload types specific to this feature.
+  - `index.ts`: Barrel export of the feature's public contract.
+- Never let one feature reach into another feature's internal components. Communicate via public interfaces or shared modules.
+
+### 3. `src/shared/` — Reusable design system & utilities
+- `shared/theme/`: Single source of truth for Figma tokens (`colors.ts`, `typography.ts`, `spacing.ts`, `radii.ts`, `shadows.ts`).
+- `shared/components/`: Pure, domain-agnostic UI primitives (e.g. `screen-container.tsx`, `button.tsx`, `text-input.tsx`).
+  - Shared components never decide financial rules or perform API requests.
+- Extract a component to `src/shared/` only when there are two or more actual consumers across different features.
+
+### 4. `src/assets/` — Static brand assets
+- Brand logos, icons, and third-party auth images with typed exports via `index.ts`.
+
+### 5. Path aliases
+- Use `@/...` configured via `tsconfig.json` paths for all cross-directory imports. Never use long relative traversal paths like `../../../../`.
 
 ## Decisions still required
 
