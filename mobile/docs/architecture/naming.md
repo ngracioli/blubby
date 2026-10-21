@@ -1,4 +1,4 @@
-# Frontend naming conventions
+# Mobile naming conventions
 
 ## Required rules
 

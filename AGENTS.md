@@ -7,9 +7,9 @@
 ## Design pattern discipline
 
 - Before creating or changing behavior, or performing structural refactors, read the applicable guides:
-  - Frontend: [architecture](frontend/docs/architecture/overview.md), [design patterns](frontend/docs/architecture/design-patterns.md), and [naming](frontend/docs/architecture/naming.md).
+  - Mobile: [architecture](mobile/docs/architecture/overview.md), [design patterns](mobile/docs/architecture/design-patterns.md), and [naming](mobile/docs/architecture/naming.md).
   - Backend: [architecture](backend/docs/architecture/overview.md), [design patterns](backend/docs/architecture/design-patterns.md), and [naming](backend/docs/architecture/naming.md).
-  - Read both sets for work spanning frontend and backend. Stack and architecture proposals remain proposals until explicitly decided; examples do not approve technologies or product scope.
+  - Read both sets for work spanning mobile and backend. Stack and architecture proposals remain proposals until explicitly decided; examples do not approve technologies or product scope.
 - Inspect and reuse existing implementations first. Start with the smallest adequate function, composition, platform capability, or framework facility. Apply a documented pattern when a concrete current problem meets its guide's criteria and simpler options fail to satisfy the requirement. Not every feature needs a pattern.
 - Evaluate each pattern on its own criteria. Strategy requires at least two actual interchangeable algorithms; this is not a universal two-implementation requirement. Adapter may bridge a single external integration with an incompatible interface.
 - Do not introduce speculative interfaces, classes, layers, variants, or out-of-scope features to justify a pattern. Keep participants within their owning feature or business module unless actual shared consumers justify extraction.

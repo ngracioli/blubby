@@ -1,4 +1,4 @@
-# Frontend documentation
+# Mobile documentation
 
 These documents define documentation structure and development conventions. They do not describe an implemented application. Expo and React Native are the intended mobile direction; library choices and the final screen map still require decisions.
 

@@ -1,4 +1,4 @@
-# Frontend architecture
+# Mobile architecture
 
 ## Status
 

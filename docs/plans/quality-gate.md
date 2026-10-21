@@ -4,11 +4,11 @@ Status: proposed; documentation only. No tooling, dependencies, thresholds, skil
 
 ## Purpose and scope
 
-Increase confidence in frontend and backend changes, including code written with coding agents. Passing checks provides evidence; it cannot guarantee correctness or appropriate design.
+Increase confidence in mobile and backend changes, including code written with coding agents. Passing checks provides evidence; it cannot guarantee correctness or appropriate design.
 
-Expo, React Native, and TypeScript are the intended frontend direction. Java, Spring Boot, and PostgreSQL remain backend proposals until explicitly decided. Confirm versions and scaffolds before selecting compatible tools.
+Expo, React Native, and TypeScript are the intended mobile direction. Java, Spring Boot, and PostgreSQL remain backend proposals until explicitly decided. Confirm versions and scaffolds before selecting compatible tools.
 
-Build on the [project rules](../../AGENTS.md), [frontend testing guide](../../frontend/docs/testing/README.md), and [backend testing guide](../../backend/docs/testing/README.md). Keep architecture and pattern decisions in their existing guides.
+Build on the [project rules](../../AGENTS.md), [mobile testing guide](../../mobile/docs/testing/README.md), and [backend testing guide](../../backend/docs/testing/README.md). Keep architecture and pattern decisions in their existing guides.
 
 ## Responsibilities
 
@@ -23,7 +23,7 @@ Plan one documented local entrypoint per side, with fast and extended profiles. 
 
 ## Checks required on both sides
 
-| Check | Frontend evidence | Backend evidence |
+| Check | Mobile evidence | Backend evidence |
 | --- | --- | --- |
 | Unit and regression | Form validation, state transitions, hooks, components, and observable loading/error behavior | Domain rules, calculations, financial invariants, and failure behavior |
 | Integration | Navigation, API contracts, session state, and platform boundaries | Application/API contracts, authorization, persistence, transactions, and constraints |
@@ -44,7 +44,7 @@ Regression is a purpose of tests across levels, not a separate duplicate suite. 
 - Paying a bill does not count the expense twice; retrying a financial operation does not duplicate it.
 - Closing-day boundaries, recurrence cancellation, and projection carryover follow documented product rules.
 - Concurrent updates and partial failures preserve database consistency and roll back appropriately.
-- Frontend tests cover submission prevention, validation, empty/error states, session entry, and accessible interactions.
+- Mobile tests cover submission prevention, validation, empty/error states, session entry, and accessible interactions.
 - Device E2E covers agreed critical journeys on Android and iOS with deterministic fixtures and isolated accounts. Select builds and automation that support the required native behavior; do not assume Expo Go is sufficient.
 
 Only implement acceptance cases for approved behavior. Resolve offline/synchronization requirements before defining its expected results.
@@ -87,7 +87,7 @@ All check types must be available for both sides. Expensive checks may run on de
 
 ## Implementation phases
 
-1. **Define scope and baseline.** Inventory scaffolds, existing tests/tools, module boundaries, critical flows, and approved behavior. Produce a frontend/backend check matrix, risk categories, proposed thresholds, and runtime budgets. Give existing debt owners and remediation dates rather than grandfathering it indefinitely.
+1. **Define scope and baseline.** Inventory scaffolds, existing tests/tools, module boundaries, critical flows, and approved behavior. Produce a mobile/backend check matrix, risk categories, proposed thresholds, and runtime budgets. Give existing debt owners and remediation dates rather than grandfathering it indefinitely.
 2. **Research and trial tools.** Verify official documentation, current versions, licensing, and compatibility. Run small trials on actual Expo/React Native transforms, mutation support, device builds, and the selected Java/database stack. Choose tools only after evidence; no runner or dependency list is approved by this plan.
 3. **Automate the fast profile.** Reuse installed tooling where adequate. Implement the local entrypoints, regression fixtures, static rules, coverage reports, and calibrated limits. Establish thresholds before switching checks to blocking; prohibit unexplained deterioration in changed code.
 4. **Add extended evidence.** Introduce real-database integration checks, Android/iOS E2E, mutation profiles, and broader dependency scans. Control fixture isolation, flakiness, secrets, and runtime. Define failure triage instead of rerunning until green.

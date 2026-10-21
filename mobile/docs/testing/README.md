@@ -1,4 +1,4 @@
-# Frontend testing
+# Mobile testing
 
 Owns component behavior, hooks, navigation integration, and critical user journeys.
 

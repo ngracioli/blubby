@@ -14,4 +14,4 @@ These documents define documentation structure and development conventions. Java
 | Verification | [Testing](testing/README.md) |
 | Deployment and recovery | [Operations](operations/README.md) |
 
-[The MVP](../../mvp.md) defines product scope. Pattern examples are conditional design examples, not additional product requirements. Shared API, money, date, and session decisions must agree with the frontend documentation.
+[The MVP](../../mvp.md) defines product scope. Pattern examples are conditional design examples, not additional product requirements. Shared API, money, date, and session decisions must agree with the mobile documentation.

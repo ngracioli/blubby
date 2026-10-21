@@ -29,4 +29,4 @@
 
 A Decorator implements the wrapped contract, not a redundant `IDecorator`. Factory Method uses an abstract creator with overridable creation; Abstract Factory creates related product families. Both use the `Factory` suffix because their roles are creation, and their structure establishes the specific pattern.
 
-These are project conventions, not names required by Refactoring.Guru. Naming a deferred pattern does not authorize implementing it. Keep role vocabulary aligned with the [frontend](../../../frontend/docs/architecture/naming.md).
+These are project conventions, not names required by Refactoring.Guru. Naming a deferred pattern does not authorize implementing it. Keep role vocabulary aligned with the [mobile](../../../mobile/docs/architecture/naming.md).

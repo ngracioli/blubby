@@ -1,4 +1,4 @@
-# Frontend design patterns
+# Mobile design patterns
 
 ## Selection policy
 
@@ -60,6 +60,6 @@ Test the behavior that justifies each conditional pattern: creation variation, c
 
 - **Abstract Factory:** requires related product families. Android and iOS support alone does not justify custom widget factories; React Native already addresses platform rendering.
 - **Singleton:** do not use custom global mutable instances for sessions, forms, or financial data.
-- **Prototype, Bridge, Flyweight, Composite, Iterator, Mediator, Memento, Template Method, Visitor, Chain of Responsibility:** no current frontend requirement establishes their need. Standard collections, React composition, reducers, and platform tooling remain the baseline.
+- **Prototype, Bridge, Flyweight, Composite, Iterator, Mediator, Memento, Template Method, Visitor, Chain of Responsibility:** no current mobile requirement establishes their need. Standard collections, React composition, reducers, and platform tooling remain the baseline.
 
 Reconsider a deferred pattern only with a concrete requirement and the same adoption evidence. Document its naming before implementation using the shared subject-and-role convention.
