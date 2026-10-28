@@ -1,5 +1,7 @@
 # Project instructions
 
+- For backend work started from repository root, read [backend agent instructions](backend/AGENTS.md) and use [backend task routing](backend/docs/agent-workflow.md). Backend-local skills are not assumed to be discovered recursively from root; read the relevant canonical `backend/.ai/skills/<name>/SKILL.md` explicitly when the client has not loaded it.
+
 - All project documentation must be written in English. Preserve intentional Portuguese product UI examples and original external asset/Figma names and links.
 - Write code identifiers in English.
 - Before preparing or executing any commit, you MUST read and follow the [commit skill](.agents/skills/commit/SKILL.md).

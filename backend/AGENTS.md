@@ -1,4 +1,20 @@
 <laravel-boost-guidelines>
+=== .ai/project-architecture rules ===
+
+# Blubby backend decisions
+
+These project decisions complement Boost's native Laravel guidance. Paths below are relative to `backend/`; repository-wide instructions in `../AGENTS.md` also apply. Never edit generated Boost blocks or package skill copies as the source of a project rule.
+
+Architecture and placement rules below are mandatory project constraints, including during reviews. Follow the conflict policy and evidence requirements in `docs/agent-workflow.md`; project documents cannot override higher-priority environment instructions. Resolve genuine project contradictions at their canonical source rather than silently choosing a rule.
+
+- Before backend behavior or structural changes, read `docs/architecture/overview.md`, `docs/architecture/naming.md` and the relevant part of `docs/architecture/design-patterns.md`. Read `docs/architecture/conventions.md` for PHP/Laravel implementation. Use the topic map in `docs/README.md` for affected API/database/security/testing rules; load only relevant topics.
+- Architecture is Laravel-first domain-oriented organization, modular-monolith ready, with conditional Actions/services, direct Eloquent and one deployable. Classify new behavior by its owner; extracted business classes belong in `app/Domain/<Domain>/`, HTTP in `Http/*/Api/<Domain>`. Models stay conventional in `app/Models` initially. Follow the architecture guide for cross-domain reads, rule reuse, writes and atomic orchestration; direct justified dependencies are allowed, cycles and bypassed owner rules are not. The directory reference authorizes locations for actual consumers, not empty layers. No mandatory per-controller Action, Service, Repository, DTO or interface. Record concrete justification and behavioral proof for a new pattern.
+- Use the `backend-development` skill for backend creation, modification and refactoring, `backend-review` for backend reviews and architectural/compliance audits, and `boost-maintenance` for guideline/skill regeneration. Canonical sources are `.ai/skills/<name>/SKILL.md`; Boost installs them into configured agents' skill directories. If the client has not discovered them, read the canonical file explicitly. See `docs/agent-workflow.md` for routing and maintenance.
+- Implemented authentication is limited to Sanctum support and `/api/user`; login/registration/token issuance and financial modules remain unimplemented. Examples do not approve new scope or settle unresolved product rules.
+- Follow repository test-first discipline for behavior changes, before/after tests for refactors and focused checks for documentation/configuration. Use installed PHPUnit, Pint and Pao; Biome only supports its configured JS/CSS/JSON paths. Run local PHP/Composer/Node commands through Sail. Report actual checks and blockers.
+- Project-specific test placement/grouping overrides the generic file-layout and one-test-class-per-class advice in the official `testing-best-practices/rules/naming.md`: use `Feature/Api/<Domain>` for HTTP, `Feature/Domain/<Owner>` for DB-backed operations and `Unit/Domain/<Domain>` for pure rules. Group by observable behavior; do not force DB-backed Actions into Unit or invent tests for trivial delegation. Keep official skill files unchanged.
+- Keep project documentation in English. Preserve intentional Portuguese product examples and external names. Do not change business behavior, infrastructure or dependencies to demonstrate an architectural pattern.
+
 === foundation rules ===
 
 # Laravel Boost Guidelines
@@ -91,6 +107,12 @@ This project has domain-specific skills available in `**/skills/**`. You MUST ac
 - Prefer PHPDoc blocks over inline comments. Only add inline comments for exceptionally complex logic.
 - Use array shape type definitions in PHPDoc blocks.
 
+=== deployments rules ===
+
+# Deployment
+
+- Laravel can be deployed using [Laravel Cloud](https://cloud.laravel.com/), which is the fastest way to deploy and scale production Laravel applications.
+
 === sail rules ===
 
 # Laravel Sail
@@ -104,6 +126,16 @@ This project has domain-specific skills available in `**/skills/**`. You MUST ac
     - Execute Node commands: `vendor/bin/sail npm run dev`
     - Execute PHP scripts: `vendor/bin/sail php [script]`
 - View all available Sail commands by running `vendor/bin/sail` without arguments.
+
+=== tests rules ===
+
+# Test Enforcement
+
+- Add or update tests for behavior and logic changes when a test provides meaningful regression coverage.
+- Pure copy, styling, and layout-only changes do not require new or updated tests.
+- When test coverage applies, run the affected tests and ensure they pass.
+- Test the changed behavior and its important failure modes, but do not add tests beyond them.
+- Read the `testing-best-practices` skill before writing tests.
 
 === laravel/core rules ===
 

@@ -27,6 +27,8 @@ Biome does not support PHP; Pint handles PHP formatting.
 
 Laravel Boost's MCP server is configured in `.agents/mcp_config.json` and runs through Sail so it can access PostgreSQL. Start Sail with `./vendor/bin/sail up -d` before using the MCP server.
 
+Project conventions start at [backend documentation](docs/README.md). [Agent workflow](docs/agent-workflow.md) explains the adopted architecture, on-demand skills, MCP discovery and safe Boost regeneration. Edit custom sources under `.ai/`, not generated official instructions or skills.
+
 ## CI
 
 GitHub Actions runs Composer validation, PHPUnit, Pint, Biome, and the asset build on pull requests and pushes to `main`. Hosting is not selected, so deployment is not configured yet.
