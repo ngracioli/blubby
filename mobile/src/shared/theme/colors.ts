@@ -12,6 +12,9 @@ export const colors = {
   border: '#E2E8F0',
   borderSubtle: '#F1F5F9',
 
+  providerBorder: '#747775',
+  providerText: '#1F1F1F',
+
   primary: '#1E3A8A',
   primaryPressed: '#172554',
   primaryLight: '#DBEAFE',

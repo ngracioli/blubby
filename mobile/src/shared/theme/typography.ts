@@ -5,6 +5,7 @@ export const fontFamilies = {
   medium: 'Manrope_500Medium',
   semiBold: 'Manrope_600SemiBold',
   bold: 'Manrope_700Bold',
+  providerMedium: 'GoogleSansFlex_500Medium',
 } as const;
 
 export const typography = {
@@ -76,6 +77,13 @@ export const typography = {
     fontSize: 16,
     lineHeight: 24,
     fontWeight: '600',
+  },
+  providerButton: {
+    fontFamily: fontFamilies.providerMedium,
+    fontSize: 16,
+    lineHeight: 24,
+    fontWeight: '500',
+    letterSpacing: 0,
   },
   caption: {
     fontFamily: fontFamilies.medium,

@@ -4,6 +4,8 @@
 - Write code identifiers in English.
 - Before preparing or executing any commit, you MUST read and follow the [commit skill](.agents/skills/commit/SKILL.md).
 - Before designing, implementing, or changing any UI, screen, or visual component, you MUST read and follow the [figma-design skill](.agents/skills/figma-design/SKILL.md).
+- Before creating or changing mobile UI components, you MUST read and follow the [shared component rules](mobile/docs/components/README.md). Design-system primitives belong in `mobile/src/shared/components/` from their first consumer, use Figma-backed defaults, and expose typed customization without weakening interaction or accessibility contracts.
+- The official Figma file owns default component visuals. When new or changed component/state designs are supplied or discovered during relevant work, align affected tokens, styles, actual consumers, and documentation in the same task while preserving the customization API. Record custom states without a Figma specification as provisional, not approved presets, and replace their default visuals when the corresponding design becomes available.
 
 ## Design pattern discipline
 
@@ -12,6 +14,7 @@
   - Backend: [architecture](backend/docs/architecture/overview.md), [design patterns](backend/docs/architecture/design-patterns.md), and [naming](backend/docs/architecture/naming.md).
   - Read both sets for work spanning mobile and backend. Stack and architecture proposals remain proposals until explicitly decided; examples do not approve technologies or product scope.
 - Inspect and reuse existing implementations first. Start with the smallest adequate function, composition, platform capability, or framework facility. Apply a documented pattern when a concrete current problem meets its guide's criteria and simpler options fail to satisfy the requirement. Not every feature needs a pattern.
+- Before creating or moving files, follow the applicable architecture and naming guides' documented directory hierarchy and locations. Check the guide's examples and existing feature structure before choosing a path; do not invent a directory convention when the guides already define the file's location. If the guides leave the location open, choose the smallest consistent location and document a new convention only when it will be reused.
 - Evaluate each pattern on its own criteria. Strategy requires at least two actual interchangeable algorithms; this is not a universal two-implementation requirement. Adapter may bridge a single external integration with an incompatible interface.
 - Do not introduce speculative interfaces, classes, layers, variants, or out-of-scope features to justify a pattern. Keep participants within their owning feature or business module unless actual shared consumers justify extraction.
 - Name custom participants according to the applicable naming guide and their actual roles and structure. Preserve framework and external API names. A GoF suffix alone does not establish a pattern, and a naming rule does not require creating an interface or wrapper.

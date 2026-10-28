@@ -12,7 +12,7 @@ Keep product-specific content separate from visual primitives. Record platform d
 
 Design tokens derived from Figma are maintained in `src/shared/theme/`:
 - `colors.ts`: Semantic palette (backgrounds, surfaces, text, primary oceanic blues, projection cyans, and financial statuses).
-- `typography.ts`: Manrope type scale (`amount`, `amountCompact`, `heading1`–`3`, `body`, `label`, `caption`).
+- `typography.ts`: Manrope type scale (`amount`, `amountCompact`, `heading1`–`3`, `body`, `label`, `caption`) and Google Sans Flex Medium `providerButton` typography from Figma's social labels. The provider font is [bundled locally with its license](../../src/assets/fonts/README.md) and loaded before rendering.
 - `spacing.ts`: Padding, margin, gap, and standard horizontal screen insets.
 - `radii.ts`: Border radii for chips, cards, buttons, and containers.
 - `shadows.ts`: Cross-platform elevation tokens.

@@ -35,7 +35,7 @@ mobile/src/
 - `shared/theme/`: Single source of truth for Figma tokens (`colors.ts`, `typography.ts`, `spacing.ts`, `radii.ts`, `shadows.ts`).
 - `shared/components/`: Pure, domain-agnostic UI primitives (e.g. `screen-container.tsx`, `button.tsx`, `text-input.tsx`).
   - Shared components never decide financial rules or perform API requests.
-- Extract a component to `src/shared/` only when there are two or more actual consumers across different features.
+- Design-system primitives such as buttons and text inputs belong in `shared/components/` from their first consumer. Follow the [shared component rules](../components/README.md) for their public contracts and customization. Other feature-specific compositions move to `src/shared/` only when two or more actual consumers across different features share the same responsibility.
 
 ### 4. `src/assets/` — Static brand assets
 - Brand logos, icons, and third-party auth images with typed exports via `index.ts`.

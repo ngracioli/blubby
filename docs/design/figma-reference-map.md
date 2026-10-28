@@ -9,6 +9,9 @@ This document maintains the mapping of screens, sections, and node IDs from the 
 
 | Scope | Figma Section | Node ID | Description / Notes | Documented flow |
 | --- | --- | --- | --- | --- |
+| Shared Button | `03 — Componentes / Ações e botões` | `24:26` | Light/dark default, pressed, disabled, and loading states | [button.md](../../mobile/docs/components/button.md) |
+| Shared Input (Field) | `03 — Componentes / Campos e validação` | `24:119` | Light/dark default, focus, error, and disabled states | [input.md](../../mobile/docs/components/input.md) |
+| Shared Divider | `05.01 — Acesso` | `88:360` | Optional label with decorative horizontal rules | [divider.md](../../mobile/docs/components/divider.md) |
 | Welcome & Sign-in | `05.01 — Acesso` | `88:334` | Entry screen section | [authentication-entry.md](../flows/authentication-entry.md) |
 | Welcome (iOS) | `05.01 — Acesso` | `88:340` | iOS version (Google + Apple sign-in) | [authentication-entry.md](../flows/authentication-entry.md) |
 | Welcome (Android) | `05.01 — Acesso` | `88:374` | Android version (Google sign-in) | [authentication-entry.md](../flows/authentication-entry.md) |

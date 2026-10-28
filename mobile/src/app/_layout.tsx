@@ -7,6 +7,7 @@ import {
   Manrope_600SemiBold,
   Manrope_700Bold,
 } from '@expo-google-fonts/manrope';
+import { fontFamilies } from '@/shared/theme';
 
 export default function RootLayout() {
   const [fontsLoaded] = useFonts({
@@ -14,6 +15,7 @@ export default function RootLayout() {
     Manrope_500Medium,
     Manrope_600SemiBold,
     Manrope_700Bold,
+    [fontFamilies.providerMedium]: require('@/assets/fonts/google-sans-flex-medium.ttf'),
   });
 
   if (!fontsLoaded) {
