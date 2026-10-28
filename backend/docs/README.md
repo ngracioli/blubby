@@ -1,6 +1,6 @@
 # Backend documentation
 
-These documents define documentation structure and development conventions. Laravel and PostgreSQL remain proposed choices, not implemented infrastructure.
+These documents define backend conventions. The backend is Laravel 13 with PostgreSQL, Docker Compose through Laravel Sail, Laravel Boost for AI tooling, and Laravel Pint for PHP formatting. Biome formats and lints supported JavaScript, CSS, and JSON files; it does not format PHP.
 
 | Topic | Guide |
 | --- | --- |

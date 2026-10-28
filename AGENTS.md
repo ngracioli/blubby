@@ -21,3 +21,12 @@
 - For each newly adopted pattern, add a brief record in the relevant feature documentation: current problem, concrete participants, rejected simpler alternative, and behavioral proof. Do not duplicate the pattern catalogs. For a previously deferred pattern, document its adoption criteria and naming before implementation.
 - Test the relevant behavior and contracts, including financial invariants and failure handling where affected. Review both for a useful missing pattern and for unnecessary abstraction; avoid unrelated refactors.
 - For nontrivial behavior changes or structural refactors, include one sentence in the final report identifying the pattern reused or adopted, or why the simpler approach suffices. Documentation-only changes, typos, and trivial edits need no pattern ceremony.
+
+## Test-first discipline
+
+- For bug fixes and behavior changes, write the smallest test that captures the observable behavior before changing implementation code.
+- Run that test first. Confirm it fails because the behavior is missing or incorrect, not because the test or environment is broken. Do not write implementation code until this failure is confirmed.
+- Then implement the smallest fix and rerun the test until it passes. Run the relevant existing suite before finishing.
+- Keep tests only when they cover a distinct behavior or defect. Do not add duplicate or artificial tests to satisfy a count.
+- For refactors that must preserve behavior, run the relevant existing tests before and after; do not invent a failing test. For documentation-only, formatting-only, and configuration-only changes with no meaningful behavioral contract, skip tests and use an appropriate focused check.
+- If a meaningful failing test cannot be written or run, explain why before changing implementation code and ask how to proceed.

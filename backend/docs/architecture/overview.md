@@ -2,7 +2,7 @@
 
 ## Status
 
-Documentation conventions are established here. A Laravel application is the proposed baseline; module boundaries, database, and hosting are not finalized.
+Laravel 13 is the backend framework. The application runs as one deployable API, with PostgreSQL for persistence and Laravel Sail for local Docker development. Hosting is not finalized.
 
 ## Proposed responsibilities
 

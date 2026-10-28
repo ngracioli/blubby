@@ -1,0 +1,24 @@
+{
+	"$schema": "https://biomejs.dev/schemas/2.6.3/schema.json",
+	"files": {
+		"includes": [
+			"resources/**/*.js",
+			"resources/**/*.css",
+			"vite.config.js",
+			"package.json"
+		]
+	},
+	"formatter": {
+		"indentWidth": 4
+	},
+	"javascript": {
+		"formatter": {
+			"quoteStyle": "single"
+		}
+	},
+	"css": {
+		"parser": {
+			"tailwindDirectives": true
+		}
+	}
+}

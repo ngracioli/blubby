@@ -6,4 +6,6 @@ Prioritize the MVP acceptance criteria: cross-user isolation, transfer conservat
 
 Test financial mutations for retries, concurrent updates, and rollback after partial failure. Use a representative real database for behavior that depends on constraints or transaction semantics.
 
-Verify adopted patterns through their contracts and actual variations. Do not add a pattern merely to enable mocks. No test framework, database fixture, or architecture verification tool has been installed at this stage.
+Run `php artisan test` for the PHPUnit suite. GitHub Actions runs Composer validation, Pint, Biome, the frontend build, PostgreSQL migrations, and PHPUnit on pull requests and pushes to `main`; see [backend CI](../../../.github/workflows/backend-ci.yml).
+
+The Laravel scaffold currently has example tests only. Add domain and integration tests as product behavior is implemented. Verify adopted patterns through their contracts and actual variations. Do not add a pattern merely to enable mocks.

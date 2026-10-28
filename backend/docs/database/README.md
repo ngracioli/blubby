@@ -1,6 +1,6 @@
 # Database
 
-Owns the entity relationship model, constraints, indexes, financial representation, transactions, and migrations. PostgreSQL is a candidate; no schema or database version is selected here.
+Owns the entity relationship model, constraints, indexes, financial representation, transactions, and migrations. PostgreSQL is the selected database; the local Sail environment uses PostgreSQL 18.
 
 Before implementation, specify money precision, currency assumptions, rounding, date-only values, instants, and recurrence timezone behavior. Select exact monetary representations rather than floating-point storage.
 

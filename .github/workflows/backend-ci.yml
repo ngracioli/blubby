@@ -1,0 +1,87 @@
+name: Backend CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  backend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: backend
+    services:
+      postgres:
+        image: postgres:18-alpine
+        env:
+          POSTGRES_DB: blubby_test
+          POSTGRES_USER: blubby
+          POSTGRES_PASSWORD: blubby
+        ports:
+          - 5432:5432
+        options: >-
+          --health-cmd "pg_isready -U blubby -d blubby_test"
+          --health-interval 10s
+          --health-timeout 5s
+          --health-retries 5
+    env:
+      APP_ENV: testing
+      APP_KEY: base64:AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=
+      DB_CONNECTION: pgsql
+      DB_HOST: 127.0.0.1
+      DB_PORT: 5432
+      DB_DATABASE: blubby_test
+      DB_USERNAME: blubby
+      DB_PASSWORD: blubby
+      CACHE_STORE: array
+      SESSION_DRIVER: array
+      QUEUE_CONNECTION: sync
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v7
+
+      - name: Set up PHP
+        uses: shivammathur/setup-php@v2
+        with:
+          php-version: '8.5'
+          extensions: pgsql, pdo_pgsql
+          coverage: none
+
+      - name: Validate Composer files
+        run: composer validate --no-check-publish
+
+      - name: Install PHP dependencies
+        run: composer install --prefer-dist --no-interaction --no-progress
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v7
+        with:
+          node-version: '24'
+          cache: npm
+          cache-dependency-path: backend/package-lock.json
+
+      - name: Install Node.js dependencies
+        run: npm ci
+
+      - name: Check PHP style
+        run: ./vendor/bin/pint --test
+
+      - name: Check JavaScript, CSS, and JSON formatting
+        run: npm run format:check
+
+      - name: Lint JavaScript, CSS, and JSON
+        run: npm run lint
+
+      - name: Build frontend assets
+        run: npm run build
+
+      - name: Run database migrations
+        run: php artisan migrate --force
+
+      - name: Run PHPUnit
+        run: php artisan test --compact
