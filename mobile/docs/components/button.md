@@ -10,7 +10,7 @@ The visual sources are [Button, node 24:26](https://www.figma.com/design/QYrBUue
 | --- | --- | --- |
 | `children` | `ReactNode` excluding null, undefined, and booleans, or `(state: ButtonState) => ReactNode` | Required unless `accessibilityLabel` is supplied for an icon-only control. Strings and numbers receive the built-in label; custom nodes render directly. |
 | `accessibilityLabel` | `string` | Native label behavior when omitted. Required by the type when `children` is absent. Provide it for custom content that has no useful accessible name. |
-| `ref` | `Ref<View>` | Unset. Forwarded to the native `Pressable` view. |
+| `ref` | `Ref<ViewInstance>` | Unset. Forwarded to the native `Pressable` view. |
 | `variant` | `'solid' \| 'outline' \| 'text'` | `'solid'`. Solid fills the background; outline uses a 1-point border; text uses a transparent background without a border. |
 | `tone` | `'primary' \| 'error'` | `'primary'`. Chooses the accent color independently of loading or disabled state. Error tone does not block activation. |
 | `appearance` | `'light' \| 'dark'` | `'light'`. Explicit palette selection; does not subscribe to system appearance. |

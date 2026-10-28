@@ -4,6 +4,7 @@ import {
   Platform,
   Text,
   TextInput,
+  type TextInputInstance,
   TextInputProps,
   TextProps,
   TextStyle,
@@ -21,7 +22,7 @@ export interface InputState {
 }
 
 export interface InputProps extends Omit<TextInputProps, 'style' | 'children'> {
-  ref?: Ref<TextInput>;
+  ref?: Ref<TextInputInstance>;
   label?: string;
   helperText?: string;
   errorMessage?: string;

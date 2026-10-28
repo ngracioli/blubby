@@ -6,7 +6,7 @@ Test observable behavior rather than internal component structure. Prioritize se
 
 For an adopted design pattern, test the contract or variation that justified it. Tests must not require a class hierarchy when a function is sufficient. Device checks cannot be replaced by mocked native APIs.
 
-The shared UI library uses Jest 29, `jest-expo`, and React Native Testing Library. `npm test -- --watch=false` runs native component checks and a React Native Web project using React DOM in jsdom. `npm run typecheck` checks production code and test types. React Test Renderer is pinned to the installed React version.
+The shared UI library uses Jest, `jest-expo`, React Native Testing Library, and Biome. `npm run lint` checks source lint rules; `npm test -- --watch=false` runs native component checks and a React Native Web project using React DOM in jsdom; `npm run typecheck` checks production code and test types. React Test Renderer is pinned to the installed React version.
 
 Tests live beside the components as `*.test.tsx`; DOM checks use `*.web.test.tsx`. Check observable interaction, prop forwarding, state precedence, refs, and accessible semantics. These suites do not replace an iOS/Android device matrix or a visual comparison against Figma. See [shared component verification](../components/verification.md) for current evidence and remaining checks.
 

@@ -1,9 +1,9 @@
 import { ReactNode, Ref } from 'react';
-import { ColorValue, StyleProp, StyleSheet, Text, TextProps, TextStyle, View, ViewProps, ViewStyle } from 'react-native';
+import { ColorValue, StyleProp, StyleSheet, Text, TextProps, TextStyle, View, ViewProps, ViewStyle, type ViewInstance } from 'react-native';
 import { theme } from '@/shared/theme';
 
 export interface DividerProps extends Omit<ViewProps, 'children'> {
-  ref?: Ref<View>;
+  ref?: Ref<ViewInstance>;
   children?: ReactNode;
   color?: ColorValue;
   thickness?: number;

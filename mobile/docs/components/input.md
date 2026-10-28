@@ -8,7 +8,7 @@ The visual source is [Field, node 24:119](https://www.figma.com/design/QYrBUue2A
 
 | Prop | Type | Default and contract |
 | --- | --- | --- |
-| `ref` | `Ref<TextInput>` | Unset. Forwarded to native input for `focus`, `blur`, and supported native methods. |
+| `ref` | `Ref<TextInputInstance>` | Unset. Forwarded to native input for `focus`, `blur`, and supported native methods. |
 | `label` | `string` | Unset. Visible label and fallback `accessibilityLabel`. A placeholder is not an accessible label substitute. |
 | `helperText` | `string` | Unset. Supporting text beneath the control; included in the input accessibility hint. |
 | `errorMessage` | `string` | Unset. A nonempty string makes the input invalid and replaces helper text with the error message. |

@@ -7,7 +7,7 @@
 | Prop | Type | Default and contract |
 | --- | --- | --- |
 | `children` | `ReactNode` | Unset. Strings and numbers use the built-in label. Custom nodes render directly. Absent, boolean, null, or empty-string content produces one uninterrupted line. |
-| `ref` | `Ref<View>` | Unset. Forwarded to the root native view. |
+| `ref` | `Ref<ViewInstance>` | Unset. Forwarded to the root native view. |
 | `color` | `ColorValue` | `theme.colors.border`. Sets line color. |
 | `thickness` | `number` | `1`. Line height in native layout units. |
 | `gap` | `number` | `12`. Space between lines and content. |

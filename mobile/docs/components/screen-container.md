@@ -9,7 +9,7 @@ The existing theme and screen layout remain the visual baseline. This contract r
 | Prop | Type | Default and behavior |
 | --- | --- | --- |
 | `children` | `ReactNode` | Required. Rendered inside the centered content view in both modes. |
-| `ref` | `Ref<View>` | Unset. Forwarded to the outer native view. |
+| `ref` | `Ref<ViewInstance>` | Unset. Forwarded to the outer native view. |
 | `scrollable` | `boolean` | `true`. Uses a `ScrollView`; `false` uses a static wrapper. |
 | `style` | `StyleProp<ViewStyle>` | No override. Styles the outer root `View`, including its background and safe-area padding. |
 | `contentContainerStyle` | `StyleProp<ViewStyle>` | No override. Styles the inner content `View` in both modes. Defaults are `flexGrow: 1`, `width: '100%'`, and the `maxWidth` prop. |

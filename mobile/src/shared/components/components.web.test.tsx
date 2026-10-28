@@ -1,6 +1,6 @@
 import { act, createRef } from 'react';
 import { createRoot, Root } from 'react-dom/client';
-import { Text, TextInput } from 'react-native';
+import { Text, type TextInputInstance } from 'react-native';
 import { Button, Input } from '@/shared/components';
 
 let container: HTMLDivElement;
@@ -28,7 +28,7 @@ it('hides decorative icon labels from the web accessibility tree', () => {
 });
 
 it('connects input errors through the native id alias and supports ref-driven focus', () => {
-  const ref = createRef<TextInput>();
+  const ref = createRef<TextInputInstance>();
   act(() => root.render(
     <Input
       ref={ref}

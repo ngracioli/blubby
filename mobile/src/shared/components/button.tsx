@@ -8,6 +8,7 @@ import {
   TextProps,
   TextStyle,
   View,
+  type ViewInstance,
   ViewStyle,
 } from 'react-native';
 import { ControlAppearance, ControlColors, controlColors, theme } from '@/shared/theme';
@@ -30,7 +31,7 @@ type ButtonContent = {
 };
 
 export type ButtonProps = Omit<PressableProps, 'children' | 'style'> & ButtonContent & {
-  ref?: Ref<View>;
+  ref?: Ref<ViewInstance>;
   variant?: 'solid' | 'outline' | 'text';
   tone?: 'primary' | 'error';
   appearance?: ControlAppearance;

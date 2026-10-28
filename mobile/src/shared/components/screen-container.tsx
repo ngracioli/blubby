@@ -8,6 +8,7 @@ import {
   StyleProp,
   StyleSheet,
   View,
+  type ViewInstance,
   ViewProps,
   ViewStyle,
 } from 'react-native';
@@ -16,7 +17,7 @@ import { theme } from '@/shared/theme';
 
 export interface ScreenContainerProps extends Omit<ViewProps, 'children' | 'style'> {
   children: ReactNode;
-  ref?: Ref<View>;
+  ref?: Ref<ViewInstance>;
   scrollable?: boolean;
   style?: StyleProp<ViewStyle>;
   contentContainerStyle?: StyleProp<ViewStyle>;
