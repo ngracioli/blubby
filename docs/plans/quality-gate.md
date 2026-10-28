@@ -6,7 +6,7 @@ Status: proposed; documentation only. No tooling, dependencies, thresholds, skil
 
 Increase confidence in mobile and backend changes, including code written with coding agents. Passing checks provides evidence; it cannot guarantee correctness or appropriate design.
 
-Expo, React Native, and TypeScript are the intended mobile direction. Java, Spring Boot, and PostgreSQL remain backend proposals until explicitly decided. Confirm versions and scaffolds before selecting compatible tools.
+Expo, React Native, and TypeScript are the intended mobile direction. Laravel and PostgreSQL remain backend proposals until implementation is approved. Confirm versions and scaffolds before selecting compatible tools.
 
 Build on the [project rules](../../AGENTS.md), [mobile testing guide](../../mobile/docs/testing/README.md), and [backend testing guide](../../backend/docs/testing/README.md). Keep architecture and pattern decisions in their existing guides.
 
@@ -88,7 +88,7 @@ All check types must be available for both sides. Expensive checks may run on de
 ## Implementation phases
 
 1. **Define scope and baseline.** Inventory scaffolds, existing tests/tools, module boundaries, critical flows, and approved behavior. Produce a mobile/backend check matrix, risk categories, proposed thresholds, and runtime budgets. Give existing debt owners and remediation dates rather than grandfathering it indefinitely.
-2. **Research and trial tools.** Verify official documentation, current versions, licensing, and compatibility. Run small trials on actual Expo/React Native transforms, mutation support, device builds, and the selected Java/database stack. Choose tools only after evidence; no runner or dependency list is approved by this plan.
+2. **Research and trial tools.** Verify official documentation, current versions, licensing, and compatibility. Run small trials on actual Expo/React Native transforms, mutation support, device builds, and the selected Laravel/database stack. Choose tools only after evidence; no runner or dependency list is approved by this plan.
 3. **Automate the fast profile.** Reuse installed tooling where adequate. Implement the local entrypoints, regression fixtures, static rules, coverage reports, and calibrated limits. Establish thresholds before switching checks to blocking; prohibit unexplained deterioration in changed code.
 4. **Add extended evidence.** Introduce real-database integration checks, Android/iOS E2E, mutation profiles, and broader dependency scans. Control fixture isolation, flakiness, secrets, and runtime. Define failure triage instead of rerunning until green.
 5. **Write agent procedures.** Update root rules and add focused reusable skills for assessment, execution, and reporting. Preserve the existing `CLAUDE.md` linkage; verify Codex, Claude, and Antigravity discover the canonical rules. Avoid duplicated agent-specific rule catalogs and do not assume identical skill support.

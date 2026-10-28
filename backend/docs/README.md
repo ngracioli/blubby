@@ -1,6 +1,6 @@
 # Backend documentation
 
-These documents define documentation structure and development conventions. Java with Spring Boot and PostgreSQL remain proposed choices, not implemented infrastructure.
+These documents define documentation structure and development conventions. Laravel and PostgreSQL remain proposed choices, not implemented infrastructure.
 
 | Topic | Guide |
 | --- | --- |

@@ -119,5 +119,5 @@ The creator will run the first test on their own iPhone. The app will also be av
 - Detail the remaining aspects of card billing cycles.
 - Detail exceptions and validation for purchase entry and bill payment, including cancellation of an occurrence after its bill has been paid.
 - Choose mobile technology supporting Android and iOS and testing on the creator's iPhone.
-- Evaluate Java with Spring Boot as an initial backend proposal; the choice is not final.
+- Use Laravel as the initial backend proposal; confirm the choice before implementation.
 - Define the database and hosting.
