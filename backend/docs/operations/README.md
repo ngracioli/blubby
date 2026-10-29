@@ -17,3 +17,7 @@ Do not hold database transactions while making remote calls. Use after-commit di
 ## Tooling maintenance
 
 [Agent workflow and Boost maintenance](../agent-workflow.md) owns guideline sources, generated files, MCP discovery and safe `boost:update` procedures. Tooling updates must not run migrations, reset databases, delete volumes or install new dependencies as incidental steps.
+
+## Authentication rollout prerequisites
+
+Run the scheduler (`sanctum:prune-expired --hours=24` is registered daily); serve over HTTPS with `APP_DEBUG=false`; configure trusted proxies only for real deployment proxies; point `AUTH_DUMMY_PASSWORD_HASH` at a bcrypt digest of the production cost; use the shared PostgreSQL `cache` table for attempt counters. Preflight normalized email collisions and non-ASCII legacy emails before migrating, and avoid a mixed-version fleet with incompatible token-expiry code.

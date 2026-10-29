@@ -31,11 +31,11 @@ Previews are available in [welcome-ios.png](../../assets/wireframes/welcome-ios.
 
 ## Limits and open decisions
 
-The screens are static and not connected. No authentication backend is implemented. Sign-in and sign-up forms, account recovery, and provider return flows have not been designed. The study has not been tested on a device or with enlarged text.
+The screens are static and not connected. The backend now implements email/password registration, login, logout, 30-day inactivity sessions and attempt limits (see `backend/docs/api/README.md`); mobile integration, social providers and recovery are not implemented. Sign-in and sign-up forms, account recovery, and provider return flows have not been designed. The study has not been tested on a device or with enlarged text.
 
 The following remain open:
 
-- Form fields, validation, and password requirements.
+- Mobile form wording and device-identity storage (backend rules: 12+ character password with upper/lower/digit/symbol, `device_id` UUIDv4).
 - Email verification and account recovery.
 - Account linking across authentication methods.
 - Error, cancellation, and provider return states.

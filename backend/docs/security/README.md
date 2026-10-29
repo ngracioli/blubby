@@ -10,7 +10,7 @@ Keep secrets out of source control and logs. Do not log passwords, tokens, or ra
 
 ## Implemented versus planned
 
-Sanctum 4.3.3, `HasApiTokens`, the personal-access-token migration and `auth:sanctum` on `/api/user` are implemented. Authentication endpoints, token issuance/revocation flows, recovery flows and provider integration are not implemented. Password-reset storage is preparation, not proof of a working reset workflow. The MVP's provider requirements do not authorize installing an SDK or choosing account-linking rules now.
+Sanctum 4.3.3, `HasApiTokens`, the personal-access-token migration and `auth:sanctum` on `/api/user` are implemented. Registration, login, current-device logout and rolling 30-day inactivity sessions are implemented: new tokens carry only `user:read`/`session:revoke`, passwords are bounded to 72 bytes, unknown-email and wrong-password logins return the same `401` after equivalent hashing work (configure `AUTH_DUMMY_PASSWORD_HASH` to the production bcrypt cost), and five independent attempt budgets (login IP 60/60 s, installation 10/60 s, email 5/300 s; registration IP 10/3600 s, installation 3/3600 s) are admitted atomically with failure returning `503`, never fail-open. `device_id` is an abuse signal, not proof of hardware. Forwarded headers are trusted only through configured proxies. Recovery flows and provider integration are not implemented. Password-reset storage is preparation, not proof of a working reset workflow. The MVP's provider requirements do not authorize installing an SDK or choosing account-linking rules now.
 
 ## Rules for future API work
 

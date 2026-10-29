@@ -8,6 +8,10 @@ Define atomic operations for transfers, bill payments, recurrence posting, and r
 
 Each migration needs a compatibility and recovery strategy appropriate to its data changes. Backup and restore responsibilities belong in [operations](../operations/README.md).
 
+## Authentication storage
+
+`users` gains a named expression unique index on `lower(btrim(email, ASCII whitespace))` (the old unique constraint stays; the migration stops on legacy collisions or non-ASCII addresses). `personal_access_tokens.expires_at` is the authoritative inactivity deadline; the second auth migration fills only null deadlines from last use/creation and is intentionally not reverted. Attempt counters live in the existing `cache` table, guarded by transaction advisory locks; `sanctum:prune-expired --hours=24` runs daily.
+
 ## PostgreSQL 18 rules
 
 - Use primary keys, `NOT NULL`, foreign keys, unique constraints and row-local `CHECK` constraints to protect persisted invariants. Validation improves errors but cannot serialize concurrent writers. `CHECK` does not establish cross-row or cross-table invariants; `NULL` may satisfy a check unless separately forbidden. PostgreSQL has no MySQL-style unsigned integer type: express nonnegative requirements with a check.
