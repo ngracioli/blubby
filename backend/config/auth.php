@@ -112,6 +112,18 @@ return [
     |
     */
 
+    'mobile' => [
+        'inactivity_seconds' => 2592000,
+        'limiter_store' => env('AUTH_LIMITER_CACHE_STORE', 'database'),
+        'limiter_namespace' => 'blubby.auth.v1',
+        // operation => dimension => [attempts, window in seconds]
+        'limits' => [
+            'login' => ['ip' => [60, 60], 'device' => [10, 60], 'email' => [5, 300]],
+            'registration' => ['ip' => [10, 3600], 'device' => [3, 3600]],
+        ],
+        'dummy_password_hash' => env('AUTH_DUMMY_PASSWORD_HASH', '$2y$12$HTYQlLHb6wZG.Xrj3vNoBug7gLe.BRoec0HaOsu6vtmrsC0munY92'),
+    ],
+
     'password_timeout' => env('AUTH_PASSWORD_TIMEOUT', 10800),
 
 ];
