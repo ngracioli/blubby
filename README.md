@@ -1,16 +1,14 @@
 # blubby!
 
-## Run the mobile app on iOS and Android
+## Run the full app on iOS and Expo Web
 
-Install Expo Go compatible with the project's SDK on your phone. From the repository root, start the Expo development server with a tunnel so the phone does not need to use the local network:
+Install Expo Go compatible with the project's SDK on your phone. Start Docker, then run this from the repository root:
 
 ```sh
 cd mobile
-EXPO_UNSTABLE_TUNNEL_V2=1 npx expo start --tunnel -c
+npm run dev:tunnel
 ```
 
-Scan the terminal QR code with Expo Go, then open the project. On iOS, the Camera app can open the QR code in Expo Go.
+The command starts the Sail backend, creates a temporary HTTPS tunnel for the API, and starts Expo with its own tunnel. It supplies the API URL to the app automatically. Scan the Expo QR code with Expo Go or open the Web URL printed by Expo. Press Ctrl+C to stop Expo, the API tunnel, and Sail services.
 
-## Run the backend
-
-See [backend setup](backend/README.md) for the Laravel API and PostgreSQL development environment.
+The first run downloads the pinned Cloudflare Tunnel binary if `cloudflared` is not installed. The API tunnel address changes each time and anyone with its URL can reach the development backend, so use this for development only. See [backend setup](backend/README.md) for the Laravel API and PostgreSQL environment.

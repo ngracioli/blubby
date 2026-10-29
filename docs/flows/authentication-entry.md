@@ -31,7 +31,7 @@ Previews are available in [welcome-ios.png](../../assets/wireframes/welcome-ios.
 
 ## Limits and open decisions
 
-The screens are static and not connected. The backend now implements email/password registration, login, logout, 30-day inactivity sessions and attempt limits (see `backend/docs/api/README.md`); mobile integration, social providers and recovery are not implemented. Sign-in and sign-up forms, account recovery, and provider return flows have not been designed. The study has not been tested on a device or with enlarged text.
+The welcome, email registration, and email login screens now connect to the implemented backend registration, login, current-user, and logout endpoints (see `backend/docs/api/README.md`). Native sessions persist in secure storage; web sessions last only until page reload. Social providers and account recovery remain unimplemented. The recovery link currently explains that the feature is unavailable. The temporary post-authentication home only confirms the signed-in identity and offers sign-out; it does not replace monthly planning. The screens have not been validated on a device or with enlarged text.
 
 The following remain open:
 

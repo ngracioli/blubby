@@ -8,6 +8,7 @@ import {
   Manrope_700Bold,
 } from '@expo-google-fonts/manrope';
 import { fontFamilies } from '@/shared/theme';
+import { AuthProvider } from '@/features/auth';
 
 export default function RootLayout() {
   const [fontsLoaded] = useFonts({
@@ -24,7 +25,9 @@ export default function RootLayout() {
 
   return (
     <SafeAreaProvider>
-      <Stack screenOptions={{ headerShown: false }} />
+      <AuthProvider>
+        <Stack screenOptions={{ headerShown: false }} />
+      </AuthProvider>
     </SafeAreaProvider>
   );
 }

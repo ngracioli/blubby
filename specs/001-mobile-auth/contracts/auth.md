@@ -1,6 +1,6 @@
 # Authentication HTTP Contract
 
-**Status**: Planned. Unversioned JSON API for native mobile clients. Backend implementation and mobile integration are separate work.
+**Status**: Implemented for backend and mobile email/password flows. Unversioned JSON API for native mobile clients; social providers and recovery remain outside this contract.
 
 ## Common rules
 

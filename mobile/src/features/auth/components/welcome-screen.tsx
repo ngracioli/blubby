@@ -20,7 +20,7 @@ export function WelcomeScreen({ onCreateAccount, onSignIn, onGoogleSignIn, onApp
         <View style={styles.introduction}>
           <View style={styles.brandSlot}>
             <View style={styles.logoCrop}>
-              <Image source={images.logo.horizontal} style={styles.logo} />
+              <Image source={images.logo.horizontal} style={styles.logo} fadeDuration={0} />
             </View>
           </View>
           <View style={styles.copy}>
